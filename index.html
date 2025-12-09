@@ -3,54 +3,210 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Terbaik No 1 Indonesia</title>
-
+  <title>Toko TipTop – Premium Furnitur & Storage</title>
+  <meta name="description" content="Toko TipTop menjual furnitur & storage — lemari, rak, kulkas mini, dsb. Produk berkualitas dengan harga terjangkau.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --primary: #0066cc;
+      --dark: #1a1a1a;
+      --light: #f5f7fa;
+      --radius: 14px;
+    }
+
     body {
+      font-family: 'Poppins', sans-serif;
       margin: 0;
-      background: #000;
+      background: var(--light);
+      color: #333;
     }
 
-    /* Banner 1: Full responsive */
-    .banner-full {
-      display: block;
-      width: 100%;
+    header {
+      background: var(--primary);
+      color: white;
+      padding: 25px 0;
+      text-align: center;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+      font-weight: 700;
+    }
+
+    .hero {
+      background: var(--primary);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .section-title {
+      font-size: 26px;
+      color: var(--primary);
+      font-weight: 700;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      border-left: 6px solid var(--primary);
+      padding-left: 10px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+    }
+
+    .product-card {
+      background: white;
+      border-radius: var(--radius);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.12);
       overflow: hidden;
+      transition: 0.3s ease;
     }
 
-    .banner-full img {
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+    }
+
+    .product-card img {
       width: 100%;
       height: auto;
-      display: block;
       object-fit: cover;
     }
 
-    /* Banner 2: Responsive (bukan square) */
-    .banner-normal {
-      display: block;
-      width: 100%;
-      overflow: hidden;
+    .product-body {
+      padding: 15px;
     }
 
-    .banner-normal img {
-      width: 100%;
-      height: auto;
-      display: block;
-      object-fit: cover;
+    .product-body h3 {
+      margin-top: 0;
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--dark);
+    }
+
+    .price {
+      font-weight: 700;
+      color: var(--primary);
+      font-size: 18px;
+      margin: 8px 0;
+    }
+
+    .buy-btn {
+      display: inline-block;
+      padding: 10px 16px;
+      background: var(--primary);
+      color: white;
+      border-radius: var(--radius);
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.2s;
+    }
+
+    .buy-btn:hover {
+      background: #004f99;
+    }
+
+    footer {
+      background: #eaeaea;
+      text-align: center;
+      padding: 20px 10px;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #555;
     }
   </style>
 </head>
 <body>
 
-  <!-- Banner 1 (Full Responsive) -->
-  <a href="https://cantonatotoajah.com/mobile/member/daftar.html?ref=gadss2" rel="nofollow" class="banner-full">
-    <img src="https://ik.imagekit.io/nsuqe9fi2/6179349790596992268.jpg" alt="Banner Full">
-  </a>
+<header>
+  <h1>Toko TipTop</h1>
+</header>
 
-  <!-- Banner 2 (Normal Responsive, bukan square) -->
-  <a href="https://cantonatotoajah.com/mobile/member/daftar.html?ref=gadss2" rel="nofollow" class="banner-normal">
-    <img src="https://ik.imagekit.io/nsuqe9fi2/6179349790596992269.jpg" alt="Banner Normal">
-  </a>
+<section class="hero">
+  <h2>Furnitur & Storage Premium</h2>
+  <p>Rangkaian produk pilihan kami — lemari, rak, kulkas & storage untuk rumah modern.</p>
+</section>
+
+<div class="container">
+
+  <h2 class="section-title">Produk Terbaru</h2>
+
+  <div class="grid">
+
+    <!-- Produk 1 -->
+    <div class="product-card">
+      <img src="https://cubichomeliving.com/wp-content/uploads/2024/08/1-TORAO-FSR-120-400x400.jpg" alt="Produk 1">
+      <div class="product-body">
+        <h3>TORAO FSR 120</h3>
+        <p>Lemari / furnitur multifungsi dari koleksi TORAO — cocok untuk rumah minimalis.</p>
+        <div class="price">Rp …</div>
+        <a href="https://wa.me/6281212345678" class="buy-btn" target="_blank">Pesan via WA</a>
+      </div>
+    </div>
+
+    <!-- Produk 2 -->
+    <div class="product-card">
+      <img src="https://cubichomeliving.com/wp-content/uploads/2024/07/18-GENIO-BC-1201-R-400x400.jpg" alt="Produk 2">
+      <div class="product-body">
+        <h3>GENIO BC 1201 R</h3>
+        <p>Storage / furniture dari GENIO — kualitas tinggi & desain modern.</p>
+        <div class="price">Rp …</div>
+        <a href="https://wa.me/6281212345678" class="buy-btn" target="_blank">Pesan via WA</a>
+      </div>
+    </div>
+
+    <!-- Produk 3 -->
+    <div class="product-card">
+      <img src="https://cubichomeliving.com/wp-content/uploads/2024/07/14-GENIO-BC-80-S-400x400.jpg" alt="Produk 3">
+      <div class="product-body">
+        <h3>GENIO BC 80 S</h3>
+        <p>Furniture / storage pilihan dengan desain sederhana dan fungsional.</p>
+        <div class="price">Rp …</div>
+        <a href="https://wa.me/6281212345678" class="buy-btn" target="_blank">Pesan via WA</a>
+      </div>
+    </div>
+
+    <!-- Produk 4 -->
+    <div class="product-card">
+      <img src="https://cubichomeliving.com/wp-content/uploads/2024/07/9-COCO-FRIDGE-400x400.jpg" alt="Produk 4">
+      <div class="product-body">
+        <h3>COCO Fridge / Storage</h3>
+        <p>Produk storage / furnitur multifungsi dengan desain modern dan compact.</p>
+        <div class="price">Rp …</div>
+        <a href="https://wa.me/6281212345678" class="buy-btn" target="_blank">Pesan via WA</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Info & Kontak -->
+  <h2 class="section-title">Tentang Toko TipTop</h2>
+  <p>Toko TipTop menyediakan furnitur & storage berkualitas — kami menjamin pengemasan aman dan pengiriman seluruh Indonesia.</p>
+
+  <h2 class="section-title">Kontak</h2>
+  <p>WhatsApp: <strong>0812-1234-5678</strong><br>
+     Email: contact@tiptopstore.com</p>
+
+</div>
+
+<footer>© 2025 Toko TipTop – All Rights Reserved.</footer>
 
 </body>
 </html>
